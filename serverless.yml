@@ -2,8 +2,8 @@ service: pedirPizzas
 
 provider:
   name: aws
-  runtime: nodejs8.10
-  region: eu-west-1
+  runtime: nodejs12.x
+  region: us-east-1
   environment:
     REGION: ${self:provider.region}
     PENDING_ORDER_QUEUE:
